@@ -82,7 +82,7 @@ async function transferToken() {
     const transactionStatus = receipt.status;
 
     console.log(
-      "The transaction association status " + transactionStatus.toString()
+      `\n- The transaction association status transactionStatus.toString()`
     );
   }
 
@@ -102,8 +102,7 @@ async function transferToken() {
     `\n- Bitcoin transfer from Treasury to ${associateAccountId}: ${tokenTransferRx.status} \n`
   );
 
-  readline.close();
-  return;
+  process.exit();
 }
 
 transferToken();

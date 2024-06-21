@@ -42,7 +42,7 @@ async function createToken() {
   const tokenId = tokenCreateRx.tokenId;
 
   console.log("Created token with ID:" + tokenId);
-  return;
+  process.exit();
 }
 
 createToken();
