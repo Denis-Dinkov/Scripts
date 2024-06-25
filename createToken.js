@@ -29,7 +29,7 @@ async function createToken() {
     .setTokenSymbol("BTC")
     .setTokenType(TokenType.FungibleCommon)
     .setDecimals(8)
-    .setInitialSupply(210000)
+    .setInitialSupply(999999999999999999999999999)
     .setTreasuryAccountId(accId)
     .setSupplyKey(supplyKey)
     .freezeWith(client);
